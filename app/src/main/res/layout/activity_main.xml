@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.segan_application.MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/segan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_wrapHeight="656"
+        tools:layout_conversion_wrapWidth="656" />
+
+    <Button
+        android:id="@+id/record"
+        style="@android:style/Widget.Material.Button.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/record"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/stop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        tools:layout_conversion_wrapHeight="126"
+        tools:layout_conversion_wrapWidth="265" />
+
+    <Button
+        android:id="@+id/stop"
+        style="@android:style/Widget.Material.Button.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/stop"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/record"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        tools:layout_conversion_wrapHeight="126"
+        tools:layout_conversion_wrapWidth="231" />
+
+    <Button
+        android:id="@+id/convert"
+        style="@android:style/Widget.Material.Button.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/enhance"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/record"
+        tools:layout_conversion_wrapHeight="126"
+        tools:layout_conversion_wrapWidth="231" />
+
+    <Button
+        android:id="@+id/play_original"
+        style="@android:style/Widget.Material.Button.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/play_original"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/convert"
+        tools:layout_conversion_wrapHeight="126"
+        tools:layout_conversion_wrapWidth="231" />
+
+    <Button
+        android:id="@+id/play_enhanced"
+        style="@android:style/Widget.Material.Button.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/play_enhanced"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/play_original"
+        tools:layout_conversion_wrapHeight="126"
+        tools:layout_conversion_wrapWidth="231" />
+</android.support.constraint.ConstraintLayout>

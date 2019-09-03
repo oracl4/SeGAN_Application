@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SeGAN_Application</string>
+    <string name="stop">Stop</string>
+    <string name="record">Record</string>
+    <string name="play_enhanced">Play Enhanced</string>
+    <string name="play_original">Play Original</string>
+    <string name="logo">logo</string>
+    <string name="enhance">Enhance</string>
+</resources>
